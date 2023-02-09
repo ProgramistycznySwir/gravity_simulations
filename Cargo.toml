@@ -1,0 +1,12 @@
+[package]
+name = "gravity_simulations"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = { version = "0.8.5" }
+# TODO: Replace the * by the latest version number.
+rapier3d = { version = "0.17.0", features = [ "simd-stable" ] }
+serde = "1.0.152"
