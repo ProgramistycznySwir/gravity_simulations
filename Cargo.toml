@@ -7,6 +7,19 @@ edition = "2021"
 
 [dependencies]
 rand = { version = "0.8.5" }
-# TODO: Replace the * by the latest version number.
-rapier3d = { version = "0.17.0", features = [ "simd-stable" ] }
+
+# Physics simulation
+rapier3d = { version = "0.17.0", features = [ "simd-stable", "parallel", "serde-serialize" ] }
+
+# Serialization
 serde = "1.0.152"
+serde_derive = "1.0.152"
+rmp = "0.8.11"
+rmp-serde  = "1.1.1"
+
+# Cool console display
+indicatif = "0.17.3"
+
+
+[profile.dev.package.rapier3d]
+opt-level = 3
