@@ -11,6 +11,8 @@ rand = { version = "0.8.5" }
 # Physics simulation
 rapier3d = { version = "0.17.0", features = [ "simd-stable", "parallel", "serde-serialize" ] }
 
+rayon = "1.6.1"
+
 # Serialization
 serde = "1.0.152"
 serde_derive = "1.0.152"

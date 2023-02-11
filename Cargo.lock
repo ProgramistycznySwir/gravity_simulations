@@ -172,6 +172,7 @@ dependencies = [
  "indicatif",
  "rand",
  "rapier3d",
+ "rayon",
  "rmp",
  "rmp-serde",
  "serde",
